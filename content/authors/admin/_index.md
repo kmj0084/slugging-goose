@@ -62,19 +62,9 @@ social:
   link: /#contact
 - display:
     header: true
-  icon: twitter
-  icon_pack: fab
-  label: Follow me on Twitter
-  link: https://twitter.com/GeorgeCushen
-- icon: "graduation-cap"
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/kmj0084/
 - icon: cv
   icon_pack: ai
   link: uploads/resume.pdf
@@ -86,5 +76,6 @@ bio: My research interests include distributed robotics, mobile computing and pr
 highlight_name: true
 ---
 
-Keegan Johnson is an experienced data scientist with an extensive background in HR analytics, workforce talent management, and using statistics to improve organizational efficiency. Some of his recent HRA applications include enterprise skills cataloging, identifying ATS bottlenecks, and quantifying employee engagement from administered surveys. He splits his time between Houston, Texas and Budapest, Hungary.
-{style="text-align: justify;"}
+Keegan Johnson is an experienced data scientist with an extensive background in HR analytics, workforce talent management, and using statistics to improve organizational efficiency. Some of his recent HRA applications include enterprise skills cataloging, identifying ATS bottlenecks, and quantifying employee engagement from administered surveys. He splits his time between Houston, Texas and Budapest, Hungary. 
+
+
