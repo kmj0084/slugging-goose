@@ -1,5 +1,5 @@
 ---
-title: My First Post
+title: Quick MLB-Story Classification Model
 author: ''
 date: '2023-12-30'
 slug: my-first-post

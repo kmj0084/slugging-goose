@@ -71,8 +71,7 @@ social:
 status:
   icon: ☕️
 superuser: true
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My interests include improving organizational data visibility, defining and implementing high data modeling best-practices, and finding efficiency opportunities for more advanced predictive analysis..
 highlight_name: true
 ---
 

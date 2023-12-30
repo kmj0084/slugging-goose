@@ -52,27 +52,31 @@ sections:
   content:
     date_format: Jan 2006
     items:
-    - company: GenCoin
+    - company: Catapult Learning
       company_logo: org-gc
       company_url: ""
-      date_end: ""
-      date_start: "2021-01-01"
+      date_end: "2023-11-01"
+      date_start: "2022-01-01"
       description: |2-
-          Responsibilities include:
+          Responsibilities:
 
-          * Analysing
-          * Modelling
-          * Deploying
-      location: California
-      title: CEO
-    - company: University X
+          * Leading dashboard developing throughout HR
+          * Identifying chokepoints in the ATS process
+          * Implementing best practices throughout IT
+      location: Remote
+      title: HR Data Scientist
+    - company: Leidos
       company_logo: org-x
       company_url: ""
-      date_end: "2020-12-31"
-      date_start: "2016-01-01"
-      description: Taught electronic engineering and researched semiconductor physics.
-      location: California
-      title: Professor of Semiconductor Physics
+      date_end: "2021-04-01"
+      date_start: "2022-04-01"
+      description: |2-
+          Responsibilities:
+          
+          * Developed enterprise skills cataloge with associate rules
+          * Worked with senior management to create DEI targets 
+      location: Remote
+      title: HR Data Scientist
     title: Experience
   design:
     columns: "2"
@@ -108,7 +112,7 @@ sections:
       title: Object-Oriented Programming in R
       url: ""
     subtitle: null
-    title: Accomplish&shy;ments
+    title: Accomplishes
   design:
     columns: "2"
 - block: collection
@@ -180,71 +184,71 @@ sections:
       {{% callout note %}}
       Quickly discover relevant content by [filtering publications](./publication/).
       {{% /callout %}}
-    title: Recent Publications
-  design:
-    columns: "2"
-    view: citation
-- block: collection
-  content:
-    filters:
-      folders:
-      - event
-    title: Recent & Upcoming Talks
-  design:
-    columns: "2"
-    view: compact
-  id: talks
-- block: tag_cloud
-  content:
-    title: Popular Topics
-  design:
-    columns: "2"
-- block: contact
-  content:
-    address:
-      city: Stanford
-      country: United States
-      country_code: US
-      postcode: "94305"
-      region: CA
-      street: 450 Serra Mall
-    appointment_url: https://calendly.com
-    autolink: true
-    contact_links:
-    - icon: twitter
-      icon_pack: fab
-      link: https://twitter.com/Twitter
-      name: DM Me
-    - icon: skype
-      icon_pack: fab
-      link: skype:echo123?call
-      name: Skype Me
-    - icon: video
-      icon_pack: fas
-      link: https://zoom.com
-      name: Zoom Me
-    coordinates:
-      latitude: "37.4275"
-      longitude: "-122.1697"
-    directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-    email: test@example.org
-    form:
-      formspree:
-        id: null
-      netlify:
-        captcha: false
-      provider: netlify
-    office_hours:
-    - Monday 10:00 to 13:00
-    - Wednesday 09:00 to 10:00
-    phone: 888 888 88 88
-    subtitle: null
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis
-      ut magna et, vehicula efficitur enim.
-    title: Contact
-  design:
-    columns: "2"
-  id: contact
-title: ""
+#     title: Recent Publications
+#   design:
+#     columns: "2"
+#     view: citation
+# - block: collection
+#   content:
+#     filters:
+#       folders:
+#       - event
+#     title: Recent & Upcoming Talks
+#   design:
+#     columns: "2"
+#     view: compact
+#   id: talks
+# - block: tag_cloud
+#   content:
+#     title: Popular Topics
+#   design:
+#     columns: "2"
+# - block: contact
+#   content:
+#     address:
+#       city: Stanford
+#       country: United States
+#       country_code: US
+#       postcode: "94305"
+#       region: CA
+#       street: 450 Serra Mall
+#     appointment_url: https://calendly.com
+#     autolink: true
+#     contact_links:
+#     - icon: twitter
+#       icon_pack: fab
+#       link: https://twitter.com/Twitter
+#       name: DM Me
+#     - icon: skype
+#       icon_pack: fab
+#       link: skype:echo123?call
+#       name: Skype Me
+#     - icon: video
+#       icon_pack: fas
+#       link: https://zoom.com
+#       name: Zoom Me
+#     coordinates:
+#       latitude: "37.4275"
+#       longitude: "-122.1697"
+#     directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+    # email: test@example.org
+    # form:
+    #   formspree:
+    #     id: null
+    #   netlify:
+    #     captcha: false
+    #   provider: netlify
+#     office_hours:
+#     - Monday 10:00 to 13:00
+#     - Wednesday 09:00 to 10:00
+#     phone: 888 888 88 88
+#     subtitle: null
+#     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis
+#       ut magna et, vehicula efficitur enim.
+#     title: Contact
+#   design:
+#     columns: "2"
+#   id: contact
+# title: ""
 type: landing
 ---
