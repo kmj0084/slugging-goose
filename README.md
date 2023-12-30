@@ -1,0 +1,2 @@
+# slugging-goose
+r blogdown
