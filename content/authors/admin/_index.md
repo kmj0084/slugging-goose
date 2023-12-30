@@ -1,65 +1,60 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+title: "Keegan Johnson"
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
+  - course: MSc in Economic Research
+    institution: University of North Texas
+    year: 2015
+  - course: BSc in Economics
+    institution: University of North Texas
     year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-first_name: Shiung Wu
-highlight_name: true
+first_name: Keegan
+output:
+  html_document:
+    df_print: paged
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-last_name: Chien
-name_pronunciation: Chien Shiung Wu
+- HR & People Analytics
+- Sabermetrics
+last_name: Johnson
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
-role: Professor of Artificial Intelligence
+- name: Leidos | Nokia | Northrop Grumman
+role: HR Data Scientist
 skills:
 - items:
-  - description: ""
+  - description: ''
     icon: python
     icon_pack: fab
-    name: Python
-    percent: 80
-  - description: ""
-    icon: chart-line
+    name: R
+    percent: 75
+  - description: ''
+    icon: "chart-line"
     icon_pack: fas
-    name: Data Science
-    percent: 100
-  - description: ""
+    name: Predictive Modelling
+    percent: 95
+  - description: ''
     icon: database
     icon_pack: fas
     name: SQL
-    percent: 40
+    percent: 60
   name: Technical
 - color: '#eeac02'
   color_border: '#f0bf23'
   items:
-  - description: ""
-    icon: person-hiking
+  - description: ''
+    icon: "baseball"
     icon_pack: fas
-    name: Hiking
-    percent: 60
-  - description: ""
-    icon: cat
+    name: Baseball Analytics
+    percent: 90
+  - description: ''
+    icon: "plane"
     icon_pack: fas
-    name: Cats
-    percent: 100
-  - description: ""
-    icon: camera-retro
+    name: Flying
+    percent: 30
+  - description: ''
+    icon: "camera-retro"
     icon_pack: fas
     name: Photography
-    percent: 80
+    percent: 50
   name: Hobbies
 social:
 - icon: envelope
@@ -71,7 +66,7 @@ social:
   icon_pack: fab
   label: Follow me on Twitter
   link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap
+- icon: "graduation-cap"
   icon_pack: fas
   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
@@ -86,8 +81,10 @@ social:
 status:
   icon: ☕️
 superuser: true
-title: 吳健雄
+bio: My research interests include distributed robotics, mobile computing and programmable
+  matter.
+highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Keegan Johnson is an experienced data scientist with an extensive background in HR analytics, workforce talent management, and using statistics to improve organizational efficiency. Some of his recent HRA applications include enterprise skills cataloging, identifying ATS bottlenecks, and quantifying employee engagement from administered surveys. He splits his time between Houston, Texas and Budapest, Hungary.
 {style="text-align: justify;"}
