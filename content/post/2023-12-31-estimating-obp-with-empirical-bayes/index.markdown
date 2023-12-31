@@ -5,16 +5,10 @@ date: '2023-12-31'
 slug: estimating-obp-with-empirical-bayes
 categories: []
 tags: []
-subtitle: ''
-summary: ''
+subtitle: 'Subtitle Render'
+summary: 'OBP for 2023 Season'
 authors: []
 lastmod: '2023-12-31T19:28:31+01:00'
-featured: no
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
-projects: []
 ---
 
 
@@ -70,6 +64,10 @@ library('fitdistrplus')
 ## Loading required package: survival
 ```
 
+# Start by loading your R packages.
+
+Then connect to your database, or directly through an API like rbaseball.
+
 
 ```r
 db <- DBI::dbConnect(odbc::odbc(), "SQL")
@@ -84,6 +82,8 @@ db <- DBI::dbConnect(odbc::odbc(),
                      )
 ```
 
+Next select all at bats from the 2023 season.
+
 
 ```r
 df.ab_log <- DBI::dbGetQuery(db,"
@@ -95,11 +95,14 @@ df.ab_log <- DBI::dbGetQuery(db,"
 View(df.ab_log)
 ```
 
+Now we'll group players' at bats and calculate their season OBP.
+
 
 ```r
 df.grouped <- df.ab_log |> 
         group_by(matchup_batter_fullName) |> 
-        dplyr::summarize(num = sum(single, double, triple, home_run, walks, hit_by_pitch, intent_walks), 
+        dplyr::summarize(num = sum(single, double, triple, home_run, walks, 
+                                   hit_by_pitch, intent_walks), 
                          den = sum(at_bat, walks, hit_by_pitch, sac_fly), 
                          ab_total = sum(at_bat)) |>
         mutate(obp = num / den) |> 
@@ -109,7 +112,12 @@ df.grouped <- df.ab_log |>
 plot_obp <- ggplot(df.grouped, aes(x=obp)) + 
   geom_histogram() + 
     theme_minimal()
+```
 
+Filter out noisy data - batters with less than 100 season ABs - and use the fitdist function to fit a beta distribution to the remaining data.
+
+
+```r
 # Filter out less than 100 at bats to fit model
 df.grouped.100p <- df.grouped |> 
     filter(ab_total > 99)
@@ -150,7 +158,7 @@ beta0 <- mass$estimate[2]
 ## generated.
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/calculate OBP-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
 
 ```r
 # Create predictions for all 2023 data
@@ -163,24 +171,26 @@ df.grouped.post <- df.grouped |>
     geom_histogram(aes(diff, y = ..density..) , binwidth = .005))
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/calculate OBP-2.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-2.png" width="672" />
 
 ```r
 # Could rerun with April and May data only and forecast rest of season
 ```
+
+Here's a plot of the model's residuals.
 
 
 ```r
 (fit_plot)
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
 ```r
 (hist.errors)
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-2.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-2.png" width="672" />
 
 ```r
 (ggplot(df.grouped.post, aes(obp, obp_est, color = ab_total)) +
@@ -192,4 +202,4 @@ df.grouped.post <- df.grouped |>
   ylab("On Base Percentage - Estimated"))
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-3.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-3.png" width="672" />

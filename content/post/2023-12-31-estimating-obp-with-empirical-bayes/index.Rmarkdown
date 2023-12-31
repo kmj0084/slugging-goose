@@ -5,17 +5,10 @@ date: '2023-12-31'
 slug: estimating-obp-with-empirical-bayes
 categories: []
 tags: []
-subtitle: ''
-summary: ''
+subtitle: 'Subtitle Render'
+summary: 'OBP for 2023 Season'
 authors: []
 lastmod: '2023-12-31T19:28:31+01:00'
-featured: no
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
-projects: []
-comments: true
 ---
 
 ```{r packages}
@@ -39,10 +32,10 @@ db <- DBI::dbConnect(odbc::odbc(), "SQL")
 # Connect without a DSN
 db <- DBI::dbConnect(odbc::odbc(),
                      Driver = 'ODBC Driver 17 for SQL Server',
-                     Server = '######',
-                     Database = "#####",
-                     trusted_connection = '###',
-                     Port = ####
+                     Server = 'LAPTOP',
+                     Database = "saber",
+                     trusted_connection = 'yes',
+                     Port = 1433
                      )
 
 ```
