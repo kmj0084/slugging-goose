@@ -12,18 +12,6 @@ lastmod: '2023-12-31T19:28:31+01:00'
 ---
 
 
-```r
-library('odbc')
-```
-
-```
-## Warning: package 'odbc' was built under R version 4.2.3
-```
-
-```r
-library('tidyverse')
-```
-
 ```
 ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
 ## ✔ ggplot2 3.4.4     ✔ purrr   1.0.1
@@ -42,10 +30,8 @@ library('tidyverse')
 ## ✖ dplyr::lag()    masks stats::lag()
 ```
 
-```r
-library('baseballr')
-# library('data.table')
-library('fitdistrplus')
+```
+## Warning: package 'odbc' was built under R version 4.2.3
 ```
 
 ```
@@ -64,9 +50,7 @@ library('fitdistrplus')
 ## Loading required package: survival
 ```
 
-# Start by loading your R packages.
-
-Then connect to your database, or directly through an API like rbaseball.
+## Connect to your database, or directly through an API like rbaseball.
 
 
 ```r
@@ -158,7 +142,7 @@ beta0 <- mass$estimate[2]
 ## generated.
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
 ```r
 # Create predictions for all 2023 data
@@ -171,7 +155,7 @@ df.grouped.post <- df.grouped |>
     geom_histogram(aes(diff, y = ..density..) , binwidth = .005))
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-2.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-2.png" width="672" />
 
 ```r
 # Could rerun with April and May data only and forecast rest of season
@@ -184,13 +168,13 @@ Here's a plot of the model's residuals.
 (fit_plot)
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 ```r
 (hist.errors)
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-2.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-2.png" width="672" />
 
 ```r
 (ggplot(df.grouped.post, aes(obp, obp_est, color = ab_total)) +
@@ -202,4 +186,5 @@ Here's a plot of the model's residuals.
   ylab("On Base Percentage - Estimated"))
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-3.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-3.png" width="672" />
+
