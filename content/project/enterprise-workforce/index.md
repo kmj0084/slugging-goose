@@ -1,27 +1,31 @@
 ---
 title: "Enterprise Workforce Laboratory"
 date: 2026-11-02
-summary: "Simulated employee event data for firm-level measurement and modeling."
+summary: "Synthetic employment data for firm-level measurement, semantic modeling, and predictive analysis."
 tags: ["Microeconomics", "Synthetic Data", "Workforce Analytics", "Survival Analysis"]
 ---
-## The firm-level complement
+## A deliberately separate firm-level model
 
-The macro labor market is composed of people and employers making decisions under constraints. That observation is a reason to study the mechanisms — **not** a license to infer individual behavior from an aggregate series.
+Economy-wide labor statistics describe the aggregate outcome of decisions, while enterprise systems record the administrative details of employment relationships. This project uses **synthetic enterprise records**, not confidential employer data, to demonstrate how those details can be modeled.
 
-This project is a developing **synthetic enterprise dataset**, deliberately kept separate from the public macro model.
+## Enterprise semantic model
 
-## Planned structure
+{{< portfolio-image src="images/owas/enterprise-semantic-model.webp" alt="Power BI model diagram with person, job, organization, and date dimensions alongside assignment history, month-end headcount, employment spells, compensation events, leave episodes, and recruiting applications." caption="Synthetic enterprise Power BI model (development snapshot). Dimensions and event/snapshot facts remain separate to preserve their distinct grains. Some date relationships are inactive and must be addressed deliberately in measures." >}}
 
-- Persons, employment relationships, assignments, and effective-dated events.
-- Hires, internal moves, and separations with explicit eligibility rules.
-- Employment spells, snapshots, and person-time exposure.
-- Requisitions and timekeeping at their appropriate grains.
-- Descriptive, survival, and predictive analyses with temporal safeguards.
+The model distinguishes **people, employment spells, assignments, time-bound snapshots, compensation events, leave episodes, and applications**. These entities represent different analytical units and should not be merged into a single generic employee table.
 
-## Example research questions
+The diagram includes:
+- Dimensions for person, job, organization, and date.
+- Employment spell, assignment history, and workforce month-end facts.
+- Compensation events, leave episodes, and recruiting applications.
+- DAX measures for headcount, hires, separations, and workforce reconciliation.
 
-How much does an annual turnover percentage hide about the timing and concentration of exits? How do estimates change when risk exposure is measured as person-time rather than an average snapshot? Which firm-level patterns might be compared descriptively with public data without implying a causal link?
+## Analytical questions
 
-## Publication status
+How sensitive is turnover to the selected separation events and denominator? How do month-end counts differ from exposure-based measures? What changes when a model uses employment spells and time-varying covariates rather than a one-row-per-person extract?
 
-**Design / in development.** No empirical model estimates, deployed applications, or predictive performance are claimed. Future examples will use simulated data, with generation assumptions and limitations disclosed.
+## Modeling roadmap
+
+The synthetic dataset is intended to support reproducible data-quality tests, descriptive dashboards, survival modeling, and predictive diagnostics. Any reported model performance will require actual fitted results and documented validation.
+
+**Status:** Architecture under development. The diagram demonstrates structure; it does not claim deployed forecasting or prediction performance.

@@ -1,33 +1,31 @@
 ---
 title: "Open Workforce Analytics Standard (OWAS)"
 date: 2026-11-02
-summary: "Evidence-based workforce measurement: definitions, temporal logic, implementation, and limitations."
+summary: "Evidence-based workforce measurement linking clear definitions to implementation."
 tags: ["Workforce Measurement", "Applied Economics", "Data Engineering"]
 ---
-## Central question
+## The question
 
-What does a workforce measure actually mean, and under what conditions can it be compared across teams, employers, or time?
+When two organizations report the same workforce metric, are they measuring the same thing?
 
-A familiar metric name is insufficient when organizations differ in their eligible populations, event definitions, measurement dates, and denominators.
+OWAS is an **independent, evidence-based reference project** on workforce metrics, temporal structure, data architecture, and implementation. It distinguishes authoritative external standards, published research, common practices, OWAS recommendations, and open methodological questions. Its recommendations are not presented as ISO or SHRM requirements.
 
-## Project approach
+## From definition to implementation
 
-OWAS is an **independent project**, not an ISO, SHRM, or government standard. Its documentation distinguishes external authoritative definitions, industry practices, published research, OWAS proposals, and unresolved questions.
+The analytical approach specifies, as applicable, metric purpose, numerator, denominator, eligible population, grain, reference period, aggregation, variants, edge cases, data quality, privacy, and external sources.
 
-Each metric specification aims to make the following explicit: analytical purpose; numerator and denominator; eligible population; grain and temporal structure; aggregation and variants; edge cases; implementation requirements; data quality; privacy; external authorities; and related definitions.
+Technical work developed alongside the reference includes:
+- R ingestion, transformations, validations, and Parquet exports for public labor-market statistics.
+- A Power BI semantic model that preserves source metadata and incompatible grains.
+- A separate **synthetic enterprise** model covering persons, employment spells, workforce snapshots, and event-level facts.
+- Dashboard views for employment, labor movement, and compensation.
 
-## Implementation work
+## Examples of the implemented work
 
-The associated applied analytics work includes:
-- R ingestion, cleaning, export, and quality-assurance scripts for public workforce data.
-- Source-aware dimensional modeling and Parquet extracts for Power BI.
-- Explicit controls for frequency, geography, industry, units, missingness, and seasonal adjustment.
-- Separate macroeconomic and synthetic enterprise data environments.
+See [Workforce economics](/project/workforce-economics/) for the public-data dashboards and [Enterprise workforce laboratory](/project/enterprise-workforce/) for the synthetic semantic model. These examples demonstrate technical implementation; they are not themselves formal OWAS requirements.
 
-## Current status and evidence
+## Why the micro/macro connection matters
 
-The metric reference and supporting dashboards are under active development. This page summarizes the architecture, rather than asserting final publication or external endorsement. Methodology pages and source repositories will be linked here as their public locations are confirmed.
+Within a firm, headcount, hiring, separation, and compensation begin as administrative transactions. At the level of the economy, related phenomena appear as employment stocks, labor flows, and wage or cost indexes. Questions connecting these levels are useful, but inference must respect their very different data-generating processes.
 
-## Why this matters for applied economics
-
-Individual employers experience hires, exits, mobility, and compensation as administrative events. Economists analyze related phenomena as employment stocks, flows, and wage processes. Well-defined measurement is necessary to connect these perspectives without treating them as the same empirical unit.
+**Status:** Independent work in active development. Evidence and methodology should be assessed at the specific metric or study level rather than as a blanket endorsement of the project.
