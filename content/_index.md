@@ -57,10 +57,6 @@ sections:
 
         A privacy-safe, in-development environment to examine firm-level employment events, denominators, and predictive questions.
 
-        ### [Empirical Bayes baseball analysis](/post/estimating-obp-with-empirical-bayes/)
-        **Applied statistics · R · sabermetrics**
-
-        An earlier independent project demonstrating shrinkage estimation and statistical thinking in a different domain.
     design:
       columns: "1"
   - block: markdown
@@ -92,19 +88,6 @@ sections:
         The methodological priority is consistent across projects: define the population and event, respect the time grain, test the data, then interpret the result.
     design:
       columns: "1"
-  - block: collection
-    id: writing
-    content:
-      title: "Research & writing"
-      count: 6
-      filters:
-        folders:
-          - post
-        exclude_future: true
-      order: desc
-    design:
-      columns: "2"
-      view: compact
   - block: markdown
     id: contact
     content:

@@ -13,7 +13,6 @@ interests:
   - Labor economics and organizational decision-making
   - Econometrics, forecasting, and statistical modeling
   - Workforce measurement and data architecture
-  - Sabermetrics
 social:
   - icon: github
     icon_pack: fab
