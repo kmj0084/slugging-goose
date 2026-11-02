@@ -1,28 +1,29 @@
 ---
-title: "Workforce Economics: Data Architecture and Dashboards"
+title: "Workforce Economics: Public Data and Semantic Modeling"
 date: 2026-11-02
-summary: "Combining public labor-market series with explicit dimensional and temporal rules."
-tags: ["Econometrics", "Power BI", "R", "Data Modeling"]
+summary: "Making multiple labor-market statistical programs analytically usable without erasing their differences."
+tags: ["Labor Economics", "R", "Power BI", "Data Architecture"]
 ---
-## Analytical question
+## The question
 
-How can measures of employment, worker flows, compensation, and business dynamics be combined without obscuring differences in their population, geography, frequency, or adjustments?
+What can we infer about labor-market adjustment when employment, labor flows, compensation, and business dynamics are viewed together?
 
-## Data and methods
+## Implemented architecture
 
-The developing macro model incorporates public statistical programs from the **Bureau of Labor Statistics** and **U.S. Census Bureau**. Source families include CES, CPS, JOLTS, ECI, QWI, J2J, BED, and BDS. These programs are not interchangeable: each has distinct definitions and observational coverage.
+The current macro workflow draws on BLS CES, CPS, JOLTS, and ECI, and Census QWI and J2J, with BED and BDS being added. These programs describe different universes and vary in grain, temporal coverage, and seasonal adjustment.
 
-The implementation uses R for ingestion and quality checks, Parquet extracts for analytics, and Power BI for dimensional modeling and visual exploration.
+Work completed includes:
+- R ingestion and cleaning with source-specific checks.
+- Validation of observation periods and metric metadata.
+- Parquet outputs for a Power BI dimensional model.
+- Reporting views for macro overview, workforce movement, and compensation.
 
-## Design choices
+## Why modeling decisions matter
 
-- Preserve source, metric, geography, industry, period, unit, and seasonal-adjustment metadata.
-- Model dimension-to-fact relationships rather than joining facts at incompatible grains.
-- Treat frequency conversion, denominator selection, and missing observations as explicit analytical decisions.
-- Keep public macro data separate from synthetic enterprise examples.
+There is no universal join key that makes quarterly establishment flows, monthly household employment, and quarterly employer compensation directly comparable. A careful model preserves source and measurement context and treats transformations as analysis rather than invisible preprocessing.
 
-## Next demonstrations
+## Next publication steps
 
-Publish annotated dashboard views, a schema diagram, quality-assurance summaries, and reproducible extracts.
+Add a schema diagram, reproducible QA summary, dashboard screenshots, and one focused research question supported by the verified outputs.
 
-**Status:** Data model and dashboard development in progress. Screenshots and live embeds will be added after review.
+**Evidence status:** Architecture and reporting are in development. No causal findings are asserted here.

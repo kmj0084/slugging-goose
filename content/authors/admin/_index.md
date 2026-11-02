@@ -3,16 +3,16 @@ title: "Keegan Johnson"
 first_name: Keegan
 last_name: Johnson
 superuser: true
-role: "People Analytics & Data Science"
-bio: "Applied analytics across workforce economics, HR data science, business intelligence, and data engineering."
+role: "Applied Economist | Workforce Analytics & Data Science"
+bio: "Applied economics, enterprise workforce analytics, statistical modeling, and data engineering."
 education:
   courses:
     - course: MS in Economics
       institution: University of North Texas
 interests:
-  - Workforce analytics and labor economics
-  - Econometrics and statistical modeling
-  - Data architecture and reproducible research
+  - Labor economics and organizational decision-making
+  - Econometrics, forecasting, and statistical modeling
+  - Workforce measurement and data architecture
   - Sabermetrics
 social:
   - icon: github
@@ -23,6 +23,8 @@ social:
     link: https://www.linkedin.com/in/kmj0084/
 highlight_name: true
 ---
-I develop data products and statistical analyses that help organizations understand their workforces and make decisions with stronger evidence. My background includes HR data science, enterprise reporting, predictive modeling, and the data engineering required to make those systems reliable.
+I am an applied analytics practitioner with an MS in Economics and a professional specialization in workforce data. My work connects microeconomic questions inside organizations — hiring, turnover, pay, and mobility — with the wider labor-market statistics used to understand those outcomes in aggregate.
 
-My current independent work includes the **Open Workforce Analytics Standard (OWAS)**, an effort to document workforce measures, data models, implementation considerations, and analytical limitations. This site is my personal portfolio; OWAS is a separate standards and research initiative.
+I have worked across predictive HR analytics, employee surveys, enterprise reporting, and the data infrastructure needed to produce defensible measures. I work primarily with **R, SQL, Power BI, Snowflake, and dbt**, alongside Python and Tableau.
+
+My current independent initiative is the **Open Workforce Analytics Standard (OWAS)**. This website is my personal research and project portfolio; OWAS maintains its own standards and methodology mission.

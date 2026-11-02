@@ -1,25 +1,33 @@
 ---
 title: "Open Workforce Analytics Standard (OWAS)"
 date: 2026-11-02
-summary: "Open reference architecture and methodology for workforce measurement."
-tags: ["People Analytics", "Measurement", "Data Engineering"]
+summary: "Evidence-based workforce measurement: definitions, temporal logic, implementation, and limitations."
+tags: ["Workforce Measurement", "Applied Economics", "Data Engineering"]
 ---
-## The problem
+## Central question
 
-Workforce dashboards can display identical metric names while using different populations, denominators, event dates, or aggregation rules. Without explicit definitions, apparent comparisons can be misleading.
+What does a workforce measure actually mean, and under what conditions can it be compared across teams, employers, or time?
 
-## What I am building
+A familiar metric name is insufficient when organizations differ in their eligible populations, event definitions, measurement dates, and denominators.
 
-OWAS is an independent evidence-based reference for workforce analytics terminology, metric definitions, temporal structures, data architecture, and implementation. Its methodology distinguishes **external requirements**, **published research**, **common practice**, **OWAS recommendations**, and **open questions**.
+## Project approach
 
-## Technical work
+OWAS is an **independent project**, not an ISO, SHRM, or government standard. Its documentation distinguishes external authoritative definitions, industry practices, published research, OWAS proposals, and unresolved questions.
 
-The broader project includes an R-based data workflow, validated source extracts, dimensional models, and Power BI reporting. The aim is to connect a clear specification of each measure with practical implementation.
+Each metric specification aims to make the following explicit: analytical purpose; numerator and denominator; eligible population; grain and temporal structure; aggregation and variants; edge cases; implementation requirements; data quality; privacy; external authorities; and related definitions.
 
-## What to look for
+## Implementation work
 
-- Metric definitions specifying numerator, denominator, eligible population, grain, and aggregation.
-- Methodology documenting source alignment, missing values, and temporal comparability.
-- Worked examples showing how measurement choices affect interpretation.
+The associated applied analytics work includes:
+- R ingestion, cleaning, export, and quality-assurance scripts for public workforce data.
+- Source-aware dimensional modeling and Parquet extracts for Power BI.
+- Explicit controls for frequency, geography, industry, units, missingness, and seasonal adjustment.
+- Separate macroeconomic and synthetic enterprise data environments.
 
-**Status:** Active development. This portfolio page describes the project; it is not a substitute for the formal OWAS documentation.
+## Current status and evidence
+
+The metric reference and supporting dashboards are under active development. This page summarizes the architecture, rather than asserting final publication or external endorsement. Methodology pages and source repositories will be linked here as their public locations are confirmed.
+
+## Why this matters for applied economics
+
+Individual employers experience hires, exits, mobility, and compensation as administrative events. Economists analyze related phenomena as employment stocks, flows, and wage processes. Well-defined measurement is necessary to connect these perspectives without treating them as the same empirical unit.
