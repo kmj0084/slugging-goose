@@ -1,35 +1,25 @@
 # slugging-goose
 
-Source for [keeganstimeseries.com](https://keeganstimeseries.com), Keegan Johnson's applied analytics and research portfolio.
+Personal portfolio source for [keeganstimeseries.com](https://keeganstimeseries.com). **The repository name stays slugging-goose.**
 
-The repository name **slugging-goose** is intentionally retained.
+## Positioning
 
-## Site architecture
+Applied economics, from firm-level workforce decisions to aggregate labor markets. The personal site is separate from the Open Workforce Analytics Standard (OWAS), an independent measurement/methodology initiative.
 
-- Hugo / Hugo Blox Academic CV theme
-- Content in `content/`, site settings in `config/_default/`
-- Netlify configuration in `netlify.toml`
-- Existing R Markdown posts and R project assets retained
+## Architecture
 
-## Portfolio refresh (2026)
+Hugo Blox Academic CV / Hugo; Netlify deployment from `main`; Markdown and R Markdown content. Existing baseball research and R assets retained.
 
-The homepage is oriented toward project evidence: OWAS methodology, workforce economics data architecture, synthetic enterprise modeling, and earlier applied statistics work.
+## Change control
 
-**OWAS is a separate initiative.** The portfolio introduces and links to it; it does not speak for external standards bodies. Work-in-progress pages intentionally avoid invented metrics, results, and deployment claims.
+Feature branch → Netlify deploy preview → review → merge to main. Project pages distinguish implemented work from proposed research. Never publish employer confidential data, invented results, or unsupported external-standard claims.
 
-## Development
+## Next evidence upgrades
 
-Install Hugo compatible with the site's theme/modules, then run:
+1. Verify and link the public OWAS project URL.
+2. Add reviewed Power BI screenshots and dimensional-model diagram.
+3. Publish a data-quality summary and reproducible R method example.
+4. Add one empirical paper with clearly stated questions, descriptive/causal boundaries, and limitations.
+5. Add current downloadable resume only after verifying the PDF.
 
-```sh
-hugo server -D
-```
-
-Netlify currently builds using `hugo` and publishes `public/`. Verify a Deploy Preview before merging changes to `main`. Do not add a resume PDF link unless an actual current PDF exists at `static/uploads/resume.pdf`.
-
-## Publishing checklist
-
-1. Verify Netlify deploy preview and internal links.
-2. Update project pages with verified screenshots, reproducible examples, and direct OWAS repository links.
-3. Review the bio and employment timeline against the current resume.
-4. Add technical case studies only when their code, findings, and disclosure permissions are established.
+To run locally, install Hugo compatible with the repository's theme modules and run `hugo server -D`.

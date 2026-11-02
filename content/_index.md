@@ -1,14 +1,14 @@
 ---
-title: "Keegan Johnson | Applied Analytics"
+title: "Keegan Johnson — Applied Economics"
 type: landing
 sections:
   - block: hero
     content:
-      title: "Workforce analytics, econometrics & data engineering"
+      title: "Applied economics, from firms to labor markets"
       text: |
-        I build analytical systems that connect reliable data, statistical methods, and decisions. My work spans people analytics, labor economics, predictive modeling, and business intelligence.
+        I study how organizations make workforce decisions — and how those decisions accumulate into labor-market outcomes. My work combines **econometrics, people analytics, data engineering, and business intelligence**.
 
-        **Explore the projects below** for methodology, implementation details, and links to source material.
+        From employment spells and hiring pipelines to wages, job flows, and business dynamics, I build measurement systems that make economic questions testable.
       cta:
         label: "Explore projects"
         url: "#projects"
@@ -26,49 +26,76 @@ sections:
       title: "About"
       username: admin
   - block: markdown
+    id: perspective
+    content:
+      title: "One labor market, two scales of analysis"
+      text: |
+        **Inside the firm:** hiring, separations, pay, job changes, employee tenure, and decisions made under organizational constraints.
+
+        **Across the economy:** employment, labor turnover, business formation, wage growth, and movement between employers.
+
+        These are connected subjects, but they are **not interchangeable datasets**. Aggregate trends do not automatically identify individual or firm behavior; enterprise data cannot by itself establish economy-wide mechanisms. Much of my research begins by asking where the two perspectives illuminate one another — and where they do not.
+    design:
+      columns: "1"
+  - block: markdown
     id: projects
     content:
-      title: "Selected work"
+      title: "Selected projects"
       text: |
         ### [Open Workforce Analytics Standard (OWAS)](/project/owas/)
-        **Measurement systems · R · SQL · Power BI · reproducible data pipelines**
+        **Measurement methodology · data architecture · reproducible analytics**
 
-        An independent, evidence-based effort to make workforce metrics more transparent and implementable. The project distinguishes authoritative sources from methodological choices and recommendations.
+        An independent reference for workforce definitions and implementation. It separates externally sourced standards and published evidence from proposed OWAS conventions.
 
-        ### [Workforce economics dashboard and data architecture](/project/workforce-economics/)
-        **BLS · Census · R · Parquet · dimensional modeling · Power BI**
+        ### [Workforce economics: a macro data model](/project/workforce-economics/)
+        **BLS/Census · R · Parquet · Power BI**
 
-        A multi-source macro workforce data model covering employment, labor flows, compensation, and business dynamics, with explicit attention to geography, industry, periodicity, and seasonal adjustment.
+        A public-data pipeline and semantic model for studying employment, compensation, worker flows, and business dynamics across sources with different populations and temporal structures.
 
-        ### [Enterprise workforce modeling laboratory](/project/enterprise-workforce/)
-        **Synthetic data · event modeling · time series · survival analysis**
+        ### [Enterprise workforce laboratory](/project/enterprise-workforce/)
+        **Synthetic data · employment events · survival analysis**
 
-        A developing environment for demonstrating workforce event models, headcount reconstruction, turnover measures, and predictive analyses without exposing employer records.
+        A privacy-safe, in-development environment to examine firm-level employment events, denominators, and predictive questions.
 
-        ### [Empirical Bayes baseball analysis](/post/2023-12-31-estimating-obp-with-empirical-bayes/)
-        **R · statistical estimation · sabermetrics**
+        ### [Empirical Bayes baseball analysis](/post/estimating-obp-with-empirical-bayes/)
+        **Applied statistics · R · sabermetrics**
 
-        An earlier applied statistics project retained as part of the broader portfolio.
+        An earlier independent project demonstrating shrinkage estimation and statistical thinking in a different domain.
+    design:
+      columns: "1"
+  - block: markdown
+    id: experience
+    content:
+      title: "Selected professional applications"
+      text: |
+        **Enterprise workforce data architecture.** At Post Holdings, I worked on multi-business-unit workforce reporting and the pipelines connecting HR systems to Snowflake, dbt, and Tableau. My work included data quality checks, turnover and headcount logic, talent-acquisition integration, and predictive modeling development.
+
+        **Statistical workforce analysis.** At Nokia, I applied predictive analytics to workforce questions and helped develop and report employee pulse-survey research.
+
+        **Analytics delivery and governance.** Across Catapult Learning, Terminix, and other employers, I have developed HR reporting and Power BI solutions, including row-level security implementations.
+
+        This is a selective account of applications, not a complete employment chronology. Employer data and proprietary materials are not reproduced here.
     design:
       columns: "1"
   - block: markdown
     id: methods
     content:
-      title: "How I work"
+      title: "Methods & tools"
       text: |
-        **Analytics:** econometrics, survival analysis, experimental methods, forecasting, and statistical inference.
+        | Analytical methods | Data systems | Communication & delivery |
+        |:---|:---|:---|
+        | Econometrics and statistical inference | R, SQL, Python | Power BI, Tableau |
+        | Survival and attrition modeling | Snowflake, dbt | Semantic models and dashboards |
+        | Time series and workforce forecasting | ETL/ELT and API integration | Technical documentation |
+        | Survey measurement and evaluation | Data validation and dimensional modeling | Stakeholder-facing analysis |
 
-        **Engineering:** SQL, R, Python, Snowflake, dbt, reproducible pipelines, data quality tests, and semantic modeling.
-
-        **Delivery:** Power BI, Tableau, technical documentation, stakeholder-facing reporting, and privacy-aware analytics.
-
-        I emphasize definitions, eligible populations, time structure, reproducibility, and the limitations of the available evidence.
+        The methodological priority is consistent across projects: define the population and event, respect the time grain, test the data, then interpret the result.
     design:
       columns: "1"
   - block: collection
     id: writing
     content:
-      title: "Writing and research"
+      title: "Research & writing"
       count: 6
       filters:
         folders:
@@ -83,7 +110,7 @@ sections:
     content:
       title: "Connect"
       text: |
-        See my [GitHub](https://github.com/kmj0084) and [LinkedIn](https://www.linkedin.com/in/kmj0084/) for current work and professional contact.
+        [GitHub](https://github.com/kmj0084) · [LinkedIn](https://www.linkedin.com/in/kmj0084/)
     design:
       columns: "1"
 ---

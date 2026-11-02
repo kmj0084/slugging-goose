@@ -1,27 +1,27 @@
 ---
-title: "Enterprise Workforce Modeling Laboratory"
+title: "Enterprise Workforce Laboratory"
 date: 2026-11-02
-summary: "Privacy-safe synthetic data for testing workforce metrics and statistical models."
-tags: ["Synthetic Data", "Survival Analysis", "SQL", "Workforce Analytics"]
+summary: "Simulated employee event data for firm-level measurement and modeling."
+tags: ["Microeconomics", "Synthetic Data", "Workforce Analytics", "Survival Analysis"]
 ---
-## Purpose
+## The firm-level complement
 
-A useful portfolio should demonstrate enterprise analytical logic without disclosing confidential employee data. This laboratory is designed around **simulated**, not employer-derived, worker records.
+The macro labor market is composed of people and employers making decisions under constraints. That observation is a reason to study the mechanisms — **not** a license to infer individual behavior from an aggregate series.
 
-## Planned analytical components
+This project is a developing **synthetic enterprise dataset**, deliberately kept separate from the public macro model.
 
-- Employment spells and event histories.
-- Month-end headcount and average exposure denominators.
-- Internal moves, hires, and separation categories.
-- Recruitment and timekeeping data at appropriate grains.
-- Attrition and survival models with careful treatment of time-varying characteristics.
+## Planned structure
 
-## Why the distinction matters
+- Persons, employment relationships, assignments, and effective-dated events.
+- Hires, internal moves, and separations with explicit eligibility rules.
+- Employment spells, snapshots, and person-time exposure.
+- Requisitions and timekeeping at their appropriate grains.
+- Descriptive, survival, and predictive analyses with temporal safeguards.
 
-A workforce model must distinguish individuals, employment relationships, jobs, events, and snapshots. A turnover measure must specify who is at risk, which separations count, and which denominator represents the exposure period.
+## Example research questions
 
-## Demonstration roadmap
+How much does an annual turnover percentage hide about the timing and concentration of exits? How do estimates change when risk exposure is measured as person-time rather than an average snapshot? Which firm-level patterns might be compared descriptively with public data without implying a causal link?
 
-First: publish a data dictionary, entity-relationship diagram, and synthetic data generation rules. Then: document validation tests, descriptive dashboards, and fitted statistical models.
+## Publication status
 
-**Status:** Proposed/under development. No model performance or empirical findings are claimed here.
+**Design / in development.** No empirical model estimates, deployed applications, or predictive performance are claimed. Future examples will use simulated data, with generation assumptions and limitations disclosed.
