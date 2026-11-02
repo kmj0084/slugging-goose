@@ -11,6 +11,12 @@ main:
   - name: Methods
     url: '/#methods'
     weight: 40
+  - name: Personal
+    url: '/#personal'
+    weight: 50
+  - name: Resume
+    url: '/resume/'
+    weight: 60
   - name: Contact
     url: '/#contact'
-    weight: 50
+    weight: 70

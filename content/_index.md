@@ -70,7 +70,7 @@ sections:
 
         **Analytics delivery and governance.** Across Catapult Learning, Terminix, and other employers, I have developed HR reporting and Power BI solutions, including row-level security implementations.
 
-        This is a selective account of applications, not a complete employment chronology. Employer data and proprietary materials are not reproduced here.
+        This is a selective account of applications, not a complete employment chronology. Employer data and proprietary materials are not reproduced here. **[Read my full resume](/resume/).**
     design:
       columns: "1"
   - block: markdown
@@ -89,11 +89,23 @@ sections:
     design:
       columns: "1"
   - block: markdown
+    id: personal
+    content:
+      title: "Beyond the datasets"
+      text: |
+        I gravitate toward data about people: what they do, where they work, why they leave, and which constraints shape decisions that look voluntary from a distance. Labor is threaded through household choices, migration, education, health, and nearly every part of economic life. I'm interested in the questions hidden in routine administrative data — particularly when the firm-level and macroeconomic stories seem to disagree.
+
+        Outside work, I enjoy **golf, travel, cooking experiments that cross culinary borders, and studying Turkish**. Living and traveling internationally has made me more curious about which features of work are universal and which depend on institutions, culture, and incentives.
+
+        **Books I return to:** *Mostly Harmless Econometrics*, *The Armchair Economist*, and *Models of Mass Destruction*. They reflect a preference for careful identification, strong intuition, and a healthy suspicion of tidy explanations.
+    design:
+      columns: "1"
+  - block: markdown
     id: contact
     content:
       title: "Connect"
       text: |
-        [GitHub](https://github.com/kmj0084) · [LinkedIn](https://www.linkedin.com/in/kmj0084/)
+        [Full resume](/resume/) · [GitHub](https://github.com/kmj0084) · [LinkedIn](https://www.linkedin.com/in/kmj0084/)
     design:
       columns: "1"
 ---
