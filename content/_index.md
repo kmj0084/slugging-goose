@@ -97,7 +97,7 @@ sections:
 
         Outside work, I enjoy **golf, travel, cooking experiments that cross culinary borders, and studying Turkish**. Living and traveling internationally has made me more curious about which features of work are universal and which depend on institutions, culture, and incentives.
 
-        **Books I return to:** *Mostly Harmless Econometrics*, *The Armchair Economist*, and *Models of Mass Destruction*. They reflect a preference for careful identification, strong intuition, and a healthy suspicion of tidy explanations.
+        **Books I return to:** *Mostly Harmless Econometrics*, *The Armchair Economist*, and *Weapons of Math Destruction*. They reflect a preference for careful identification, strong intuition, and a healthy suspicion of tidy explanations.
     design:
       columns: "1"
   - block: markdown
