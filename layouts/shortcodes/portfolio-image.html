@@ -1,0 +1,10 @@
+{{- $src := .Get "src" -}}
+{{- $file := printf "static/%s" $src -}}
+{{- if fileExists $file -}}
+<figure class="owas-portfolio-figure" style="margin: 1.75rem auto 2rem; max-width: 1020px;">
+  <a href="{{ $src | relURL }}" target="_blank" rel="noopener">
+    <img src="{{ $src | relURL }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border:1px solid #ddd;border-radius:8px;box-shadow:0 8px 25px rgba(0,0,0,.10);" />
+  </a>
+  <figcaption style="font-size:.9rem;line-height:1.55;margin-top:.6rem;color:#586174;">{{ .Get "caption" }}</figcaption>
+</figure>
+{{- end -}}
